@@ -44,7 +44,8 @@ body {
 
 summary{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
     border: 1px solid #ddd;
     padding: 8px;
     background: #fff;
@@ -55,8 +56,17 @@ summary{
     cursor: pointer;
 }
 
+summary::after {
+  content: "▼";  
+  margin-left: auto; 
+}
+
+details[open] summary::after {
+  content: "▲"; 
+
 .dropdown-list li{
-  width: 100%;
+  text-align: left;
+  width: 90%;
   border: 1px solid #ddd;
   padding: 8px;
   max-width: 100%;

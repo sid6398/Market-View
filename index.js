@@ -100,7 +100,6 @@ function renderStrategies() {
 
 // dateDropdown.addEventListener("change", renderStrategies);
 
-// Initial render
 window.onload = function () {
     renderStrategies();
 };
