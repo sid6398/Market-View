@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: gray;
+  font-weight: bolder;
+  border: none;
+  background-color: transparent;
+  /* transition: background 0.3s; */
+}
+
+.active {
+  background-color: blue;
+  color: white;
+  border-radius: 15px;
+}
+
+summary{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 8px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.dropdown-list li{
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 8px;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+
+
+option{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.dropdown-container {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 15px;
+  max-width: 100%;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card span{
+    font-size: 13px;
+    color: gray;
+    font-weight: bold;
+}
+
+.empty-state {
+  margin-top: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+
+@media only screen and (max-width:991px){
+  .toggle-container{
+    overflow-x: scroll;
+  }
+}
