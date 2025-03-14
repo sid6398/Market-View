@@ -92,7 +92,7 @@ function renderStrategies() {
     strategyCount.forEach((count, name) => {
         const card = document.createElement("div");
         card.className = "card";
-        card.innerHTML = `<strong>${name}</strong><span>${count} ${count > 1 ? "Strategies" : "Strategy"}</span>`;
+        card.innerHTML = `<strong>${name}</strong><span>&#8226; ${count} ${count > 1 ? "Strategies" : "Strategy"}</span>`;
         cardsContainer.appendChild(card);
     });
 
